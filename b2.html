@@ -1,90 +1,65 @@
 <html>
-	<head>
+		<head>
 		<title>Bio-Intelligence: AE</title>
 		<link rel="icon" type="image" href="favicon.ico">
+	</head>
 	<body>
 		<style>
-	html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-	
 	body {
-	background-image:url('arrow.jpg');
+	background-image:url('nobel.jpg');
 	background-attachment:fixed;
 	background-size:cover;
 	}
 	
 	article {
-	position: absolute;
-	bottom: 30;
 	border-radius:30px 30px 30px 30px;
-	float: bottom;
-	text-align:center;
-	color: black;
-	border: 10px solid black;
+	float: right;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	padding: 20px;
-	width: 96.5%;
-	background-color: rgba(0,0,255,0.2);
-	height: 290px;
+	width: 55%;
+	background-color: navy;
+	height: 500px;
 	}
 	
-	
-	
-	header {
-	position: absolute;
-	top: 10;
-	right: -20;
-	width: 70%;
-	height: 50px;
-	border-radius:15px 15px 15px 15px;
-	box-shadow: 0px 8px 16px 0px;
-	background-color: rgba(0,150,100,0.2);
-	border: 10px solid black;
-	padding-bottom: 70px;
-	text-align: center;
-	color: black;
-	
-	}
 	
 	footer {
 	position: absolute;
-	bottom:-120;
-	width:100%;
-	height:80px;
+	left: 505;
+	bottom: -120;
+	width: 55%;
+	height: 80px;
 	border-radius:15px 0px 0px 0px;
-	box-shadow:0px 8px 16px 0px;
-	background: linear-gradient(to top, blue, lightblue);
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	background-color: white;
 	padding: 20px;
-	text-align: center;
-	color:white;
+	text-align: center-right;
+	color: navy;
 	}
 
-	.menub {
+	.dropbtn {
 	position:fixed;
 	left: 0;
 	top:0;
-	background: radial-gradient(circle,rgba(0,150,100,1), rgba(0,0,250,0.5));;
-	color:white;
-	padding:16px;
-	box-shadow:0px 8px 16px 0px;
+	background-color: gold;
+	color: white;
+	padding: 16px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	font-size: 16px;
 	border: none;
 	border-radius: 15px 15px 15px 15px;
 	}
 
-	.menu {
+	.dropdown {
 	position: relative;
-	display:inline-block;
+	display: inline-block;
 	}
 
-	.menucontent {
+	.dropdown-content {
 	display: none;
 	position: absolute;
 	background-color: navy;
 	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 	border-radius: 15px 15px 15px 15px;
 	position:fixed;
@@ -92,45 +67,50 @@
 	top:50;
 	}
 
-	.menucontent a {
-	color:black;
-	padding:12px 16px;
+	.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
 	text-decoration: none;
-	box-shadow: 0px 8px 16px 0px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	display: block;
-	border-radius:15px 15px 15px 15px;
+	border-radius: 15px 15px 15px 15px;
 	}
 
-	.menucontent a:hover {background:gold}
-	.menu:hover .menucontent {display:block}
-	.menu:hover .menub {background: radial-gradient(circle,rgba(0,0,250,1), rgba(0,150,100,2));}
+	.dropdown-content a:hover {background-color: gold;}
+	.dropdown:hover .dropdown-content {display: block;}
+	.dropdown:hover .dropbtn {background-color: blue;}
 	
 	</style>
-	<header>
-		<h1 style="font-family: Monospace, sans-serif; font-size: 350%;"><b>Albert Einstein Biography</b></h1>
-	</header>
+	<h1 style="color:navy; font-family: Monospace, sans-serif; font-size: 300%; text-align: right;"><b>Albert Einstein Biography</b></h1>
 	<footer>
 		<h3 style="font-family:Franklyn Gothic Heavy, sans-serif;"><b>This Website was Created by <i>Thomas Etherington</i><b></h3>
 		<h6 style="font-family:Franklyn Gothic Heavy, sans-serif;"><b>DISCLAIMER:</b>THE INFO ON THIS WEBSITE <i>WAS NOT</i> HAND-WRITTEN. <b>THE WEBSITE ITSELF WAS.</b></h6>
 	</footer>
 	<article>
-		<h1 style="font-family: Agrandir, sans-serif;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);"><b>Later Life<b></h1>
-		<p style="font-family: League Spartan, sans-serif; font-size: 100%;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">In his later years,
-		<i>Albert Einstein</i> lived at the Institute for Advanced Study in Princeton, persistently working on a unified field theory while 
-		questioning aspects of quantum mechanics. He also emerged as a prominent public thinker, championing civil rights, pacifism
-		, and Zionism and voicing concern over the dangers of nationalism and nuclear weapons. Even with declining health, he remained 
-		intellectually engaged, corresponding with scientists, mentoring students, and pondering the broader philosophical and ethical
-		implications of science, leaving a legacy that blended scientific brilliance with a commitment to humanity and global awareness.</p>
+		<h1 style="font-family: Agrandir, sans-serif; color:gold;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);"><b>His Acheivements<b></h1>
+		<p style="color:gold; font-family: League Spartan, sans-serif; font-size: 100%;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);"><i>Albert Einstein</i>'s work fundamentally transformed physics, primarily
+		through the theories introduced in his "miracle year" of 1905. That 
+		year, he published four pivital papers, including his explanation of
+		<b>photoelectric effect</b>-which established that light travels as 
+		energy packets called photons and earned him the 1921 Nobel Prize-
+		and the <b>Special Theory of Relativity</b>, which connected space 
+		and time and yielded the famous equation, <b>E=mc²</b>. A decade
+		later, he completed his most significant achievement, the <b>General
+		Theory of Relativity</b>(1915), which redefined gravity as the curvature
+		of space-time caused by mass. Together, these theories provided the 
+		concept for nearly all modern cosmology and quantum mechanics.</p>
 		<h1 style="font-family: Agrandir, sans-serif; color:white" text-align="bottom">Bio-Intelligence Biographies™</h1>
 	</article>
-
-	<div class="menu">
-	<button style="font-family: Agrandir, sans-serif;" class="menub"><b><i>Information Pages:</i></b></button>
-	<div class="menucontent">
-		<a style="font-family: Agrandir, sans-serif; color:white; font-size:150%; padding-left: 10px;" href="/index.html">Home</a>
-		<a style="font-family: Agrandir, sans-serif; color:white; font-size:150%;padding-left: 10px;" href="./b1.html">Early Life</a>
-		<a style="font-family: Agrandir, sans-serif; color:white; font-size:150%; padding-left: 10px;" href="./b2.html">His Achievements</a>
+	<div class="dropdown">
+	<button style="font-family: Agrandir, sans-serif; color:navy;" class="dropbtn"><b><i>Information Pages:</i></b></button>
+	<div class="dropdown-content">
+		<a style="font-family: Agrandir, sans-serif; color:white; font-size:150%; padding-left: 10px;" href="/">Home</a>
+		<a style="font-family: Agrandir, sans-serif; color:white; font-size:150%;padding-left: 10px;" href="./b2.html">His Achievements</a>
+		<a style="font-family: Agrandir, sans-serif; color:white; font-size:150%; padding-left: 10px;" href="./b3.html">Later Life</a>
 	</div>
 	</div>
 	</body>
 </html>
+
+
+
